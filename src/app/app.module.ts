@@ -2,13 +2,22 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { SummaryPipe } from './shared/pipes/summary.pipe';
+import { FileSizePipe } from './shared/pipes/file-size.pipe';
+import { FormsModule } from '@angular/forms';
+import { FilterPlayersPipe } from './shared/pipes/filter-players.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SummaryPipe,
+    FileSizePipe,
+    FilterPlayersPipe,
+
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
